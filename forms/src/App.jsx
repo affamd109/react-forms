@@ -1,3 +1,4 @@
+import SignupForm from './SignupForm'
 import UsernameForm from './UsernameForm'
 
 function App() {
@@ -7,7 +8,9 @@ function App() {
     <>
     <h1 className='text-4xl text-red-500 mb-15 '>React forms</h1>
 
-    <UsernameForm/>
+    {/* <UsernameForm/> */}
+
+    <SignupForm/>
 
 
      
