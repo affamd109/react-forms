@@ -1,4 +1,5 @@
 import BetterSignup from './BetterSignup'
+import ShoppingForm from './ShoppingForm'
 import SignupForm from './SignupForm'
 import UsernameForm from './UsernameForm'
 
@@ -13,7 +14,9 @@ function App() {
 
     {/* <SignupForm/> */}
 
-    <BetterSignup/>
+    {/* <BetterSignup/> */}
+
+    <ShoppingForm/>
 
 
      

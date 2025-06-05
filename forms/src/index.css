@@ -4,6 +4,14 @@ body{
   @apply bg-black text-white flex items-center justify-center min-h-screen
 }
 
+button{
+  @apply border-2 border-gray-400 p-1 hover:opacity-65 cursor-pointer rounded-md
+}
+
+input{
+  @apply border-2 border-gray-400 p-1 rounded-md
+}
+
 
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
