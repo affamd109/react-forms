@@ -1,7 +1,8 @@
 import { useState } from "react"
 
-export default function ShoppingForm(){
+export default function ShoppingForm({addItem}){
     const [formData , setFormData] = useState({product : "" , quantity : ""})
+    //Here formData = {product : "" , quantity : ""}
 
     const handleChange = (evt) =>{
         const changeField = evt.target.name;
@@ -16,13 +17,20 @@ export default function ShoppingForm(){
 
     }
 
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+        console.log("kbdkjd");
+        addItem(formData);
+
+    }
+
     return (
-        <form >
-            <label htmlFor="product"></label>
+        <form onSubmit={handleSubmit} >
+            <label htmlFor="product"> Product name: </label>
             <input className="m-2" type="text" placeholder="Product name" id="product" name="product"
              value={formData.product} onChange={handleChange} />
              
-             <label htmlFor="quantity"></label>
+             <label htmlFor="quantity"> Quantity : </label>
              <input className="m-2 " type="text" name="quantity" id="quantity" value={formData.quantity} 
              onChange={handleChange} placeholder="Quantity" />
 
