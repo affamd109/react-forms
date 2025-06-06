@@ -34,7 +34,7 @@ export default function BetterSignup(){
     return (
         <div className="flex" >
             <label htmlFor="firstName" >Enter firstname :</label>
-            <input id="firstName" className="border-2 border-gray-400 p-1 m-1 rounded-md" type="text" placeholder="First name" value={formData.firstName || ""} onChange={handleChange} name="firstName" />
+            <input id="firstName" className="border-2 border-gray-400 p-1 m-1 rounded-md" type="text" placeholder="First name" value={formData.firstName || ""} onChange={handleChange} name="firstName"  /> 
 
             <label htmlFor="lastName" >Enter lastname :</label>
             <input id="lastName" className="border-2 border-gray-400 p-1 m-1 rounded-md" type="text" placeholder="Last name" value={formData.lastName || ""} onChange={handleChange} name="lastName" />
