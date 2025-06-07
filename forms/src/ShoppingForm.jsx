@@ -1,4 +1,5 @@
 import { useState } from "react"
+import {v4 as uuid} from "uuid";
 
 export default function ShoppingForm({addItem}){
     const [formData , setFormData] = useState({product : "" , quantity : ""})
@@ -19,8 +20,9 @@ export default function ShoppingForm({addItem}){
 
     const handleSubmit = (e) =>{
         e.preventDefault();
-        console.log("kbdkjd");
+        console.log("Submitted");
         addItem(formData);
+        setFormData({product : "" , quantity : ""});
 
     }
 
